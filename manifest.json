@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "default_locale": "en",
+  "name": "__MSG_extensionName__",
+  "short_name": "__MSG_extensionName__",
+  "version": "1.0.0",
+  "description": "__MSG_extensionDescription__",
+  "author": "nik.see.7@gmail.com",
+  "homepage_url": "https://github.com/Bogdanov-Nikita",
+  "icons": {
+    "128": "icon/edit-128.png"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_title": "__MSG_defaultTitle__",
+    "default_icon": {
+      "128": "icon/edit-128.png"
+    }
+  },
+  "side_panel": {
+    "default_path": "side/side-panel.html"
+  },
+  "permissions": [
+    "tabs",
+    "sidePanel"
+  ]
+}
