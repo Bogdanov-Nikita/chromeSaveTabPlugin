@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сохраняшка — Панель управления</title>
+    <!-- Подключение файла стилей -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <!-- Основная карточка расширения -->
+    <main class="card mb-4">
+        <div class="card-body">
+
+            <!-- Секция экспорта -->
+            <section>
+                <h1 id="lblPageCardTitle">Сохранить все открытые вкладки</h1>
+                <p id="lblPageCardDescription" class="mb-3">Выберите формат для сохранения:</p>
+
+                <!-- Чекбокс группировки -->
+                <div style="margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                    <input type="checkbox" id="groupByDomain" checked
+                           style="cursor: pointer; width: 16px; height: 16px; margin: 0;">
+                    <label for="groupByDomain" style="cursor: pointer; user-select: none; color: var(--bs-body-color);">
+                        Группировать по доменам
+                    </label>
+                </div>
+
+                <!-- Кастомный CSS-компонент Дропдауна -->
+                <div class="dropdown" id="exportDropdownContainer">
+                    <button class="btn btn-primary dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" id="dropdownMenuButton">
+                        Экспортировать как...
+                    </button>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <button class="dropdown-item" type="button" id="saveToPlainText">Текстовый список (.txt)</button>
+                        <button class="dropdown-item" type="button" id="saveToHTML">Красивый отчет (.html)</button>
+                        <button class="dropdown-item" type="button" id="saveToJSON">Резервная копия (.json)</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Разделительная линия в стиле Bootstrap -->
+            <hr class="my-3">
+
+            <!-- Секция импорта -->
+            <h2 id="lblRestoreSessionTitle">Восстановите сессию</h2>
+            <p id="lblRestoreSessionDesc" class="mb-3">Загрузить из резервной копии:</p>
+
+            <button type="button" class="btn btn-outline-secondary" id="restoreFromFile">
+                Загрузить JSON
+            </button>
+
+            <!-- Скрытый системный элемент для выбора файла -->
+            <input type="file" id="importJSONFile" accept=".json" style="display: none;"/>
+        </div>
+    </main>
+</div>
+
+<!-- Подключение файла со скриптами -->
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
