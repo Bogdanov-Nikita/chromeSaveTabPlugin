@@ -1,0 +1,37 @@
+{
+  "extensionName": {
+    "message": "Tab Saver",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Saving open tabs to a file or restoring them from a file",
+    "description": "Extension description"
+  },
+  "defaultTitle": {
+    "message": "Click to open the panel for saving tabs",
+    "description": "Sidebar title"
+  },
+  "pageCardTitle": {
+    "message": "Save all open tabs",
+    "description": "Card title"
+  },
+  "pageCardDescription": {
+    "message": "Select a format for saving",
+    "description": "Card description"
+  },
+  "pageTitle": {
+    "message": "Saved Tabs"
+  },
+  "totalTabs": {
+    "message": "Total tabs:"
+  },
+  "localPages": {
+    "message": "Local / Browser pages"
+  },
+  "noTitle": {
+    "message": "Untitled"
+  },
+  "noURL": {
+    "message": "URL not found"
+  }
+}

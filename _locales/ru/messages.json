@@ -1,0 +1,40 @@
+{
+  "extensionName": {
+    "message": "Сохраняшка",
+    "description": "Название расширения"
+  },
+  "extensionDescription": {
+    "message": "Сохранение открытых вкладок в файл или разворачивании из файла",
+    "description": "Описание расширения"
+  },
+  "defaultTitle": {
+    "message": "Нажмите, чтобы открыть панель для сохранения вкладок",
+    "description": "Заголовок боковой панели"
+  },
+  "pageCardTitle": {
+    "message": "Сохранить все открытые вкладки",
+    "description": "Заголовок карточки"
+  },
+  "pageCardDescription": {
+    "message": "Выберите формат для сохранения",
+    "description": "Описание карточки"
+  },
+  "pageTitle": {
+    "message": "Сохраненные вкладки"
+  },
+  "totalTabs": {
+    "message": "Всего вкладок:"
+  },
+  "localPages": {
+    "message": "Локальные / Браузерные страницы"
+  },
+  "noTitle": {
+    "message": "Без названия"
+  },
+  "noURL": {
+    "message": "URL не  найден"
+  }
+}
+
+
+
