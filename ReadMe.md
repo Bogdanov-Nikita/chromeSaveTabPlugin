@@ -1,8 +1,8 @@
 # Tab Saver
 
-**Tab Saver** is a lightweight, secure, and feature-rich browser extension (WebExtension) designed to save, organize, and quickly restore open browser tabs.
+**Tab Saver** is a browser extension (WebExtension) designed for saving, organizing, and quickly restoring open browser tabs.
 
-The project supports exporting tabs into `TXT`, `HTML`, and `JSON` formats. It features smart session restoration, original favicon rendering, total XSS protection, a flexible domain-grouping option, and full multi-language support.
+The project supports exporting tabs into `TXT`, `HTML`, and `JSON` formats. It features session restoration, original favicon rendering, XSS protection, a domain-grouping option, and multi-language support.
 
 ## 🚀 Key Features
 
