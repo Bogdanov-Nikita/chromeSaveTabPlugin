@@ -13,7 +13,7 @@
   },
   "pageCardTitle": {
     "message": "Сохранить все открытые вкладки",
-    "description": "Заголовок карточки"
+    "description": "Заголовок карточки экспорта"
   },
   "pageCardDescription": {
     "message": "Выберите формат для сохранения",
@@ -33,6 +33,38 @@
   },
   "noURL": {
     "message": "URL не  найден"
+  },
+  "exportDropdownButton": {
+    "message": "Экспортировать как...",
+    "description": "Текст на кнопке выпадающего списка"
+  },
+  "exportFormatTxt": {
+    "message": "Текстовый список (.txt)",
+    "description": "Пункт меню для TXT"
+  },
+  "exportFormatHtml": {
+    "message": "Красивый отчет (.html)",
+    "description": "Пункт меню для HTML"
+  },
+  "exportFormatJson": {
+    "message": "Резервная копия (.json)",
+    "description": "Пункт меню для JSON"
+  },
+  "optionGroupByDomain": {
+    "message": "Группировать по доменам",
+    "description": "Текст около чекбокса"
+  },
+  "restoreSessionTitle": {
+    "message": "Восстановите сессию",
+    "description": "Заголовок блока импорта"
+  },
+  "restoreSessionDesc": {
+    "message": "Загрузить вкладки из резервной копии",
+    "description": "Описание блока импорта"
+  },
+  "btnRestoreFromFile": {
+    "message": "Загрузить JSON",
+    "description": "Кнопка импорта"
   }
 }
 

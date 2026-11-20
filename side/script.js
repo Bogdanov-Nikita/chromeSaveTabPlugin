@@ -9,6 +9,9 @@ const restoreFromFile = document.getElementById('restoreFromFile');
 // Список кнопок для управления их доступностью (UI Lock)
 const uiButtons = [saveToPlainText, saveToHTMLText, saveToJSONText, restoreFromFile];
 
+// Запускаем локализацию сразу после полной загрузки DOM-дерева страницы
+document.addEventListener('DOMContentLoaded', initInterfaceLocalization);
+
 /**
  * Переключатель блокировки интерфейса во время асинхронных операций
  */
@@ -398,6 +401,44 @@ function saveToFile(data, filename, type = 'text/plain') {
     // Очистка памяти
     document.body.removeChild(link);
     URL.revokeObjectURL(url);
+}
+
+/**
+ * Функция для динамического перевода элементов интерфейса боковой панели
+ */
+function initInterfaceLocalization() {
+    // Вспомогательная функция для безопасной вставки перевода в текстовый контент элемента
+    const translateElement = (id, messageKey) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.textContent = browser.i18n.getMessage(messageKey) || element.textContent;
+        }
+    };
+
+    // Переводим заголовки и описания
+    translateElement('lblPageCardTitle', 'pageCardTitle');
+    translateElement('lblPageCardDescription', 'pageCardDescription');
+    translateElement('lblRestoreSessionTitle', 'restoreSessionTitle');
+    translateElement('lblRestoreSessionDesc', 'restoreSessionDesc');
+    translateElement('restoreFromFile', 'btnRestoreFromFile');
+
+    // Переводим текст возле чекбокса (для этого добавьте id="lblGroupByDomain" к тегу <label> в HTML)
+    translateElement('lblGroupByDomain', 'optionGroupByDomain');
+
+    // Локализация элементов выпадающего списка (Dropdown)
+    const dropdownContainer = document.getElementById('exportDropdownContainer');
+    if (dropdownContainer) {
+        // Переводим главную кнопку дропдауна
+        const toggleBtn = dropdownContainer.querySelector('.dropdown-toggle');
+        if (toggleBtn) {
+            toggleBtn.textContent = browser.i18n.getMessage('exportDropdownButton') || toggleBtn.textContent;
+        }
+
+        // Переводим пункты меню внутри дропдауна по их ID
+        translateElement('saveToPlainText', 'exportFormatTxt');
+        translateElement('saveToHTML', 'exportFormatHtml');
+        translateElement('saveToJSON', 'exportFormatJson');
+    }
 }
 
 

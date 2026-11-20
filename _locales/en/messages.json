@@ -13,7 +13,7 @@
   },
   "pageCardTitle": {
     "message": "Save all open tabs",
-    "description": "Card title"
+    "description": "Export card title"
   },
   "pageCardDescription": {
     "message": "Select a format for saving",
@@ -33,5 +33,37 @@
   },
   "noURL": {
     "message": "URL not found"
+  },
+  "exportDropdownButton": {
+    "message": "Export as...",
+    "description": "Text on the dropdown toggle button"
+  },
+  "exportFormatTxt": {
+    "message": "Text list (.txt)",
+    "description": "Menu item for TXT"
+  },
+  "exportFormatHtml": {
+    "message": "Beautiful report (.html)",
+    "description": "Menu item for HTML"
+  },
+  "exportFormatJson": {
+    "message": "Backup file (.json)",
+    "description": "Menu item for JSON"
+  },
+  "optionGroupByDomain": {
+    "message": "Group by domains",
+    "description": "Checkbox label text"
+  },
+  "restoreSessionTitle": {
+    "message": "Restore session",
+    "description": "Import block title"
+  },
+  "restoreSessionDesc": {
+    "message": "Load tabs from a backup file",
+    "description": "Import block description"
+  },
+  "btnRestoreFromFile": {
+    "message": "Load JSON",
+    "description": "Import button text"
   }
 }

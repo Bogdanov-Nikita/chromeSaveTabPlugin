@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "description": "__MSG_extensionDescription__",
   "author": "nik.see.7@gmail.com",
-  "homepage_url": "https://github.com/Bogdanov-Nikita",
+  "homepage_url": "https://github.com/Bogdanov-Nikita/chromeSaveTabPlugin",
   "icons": {
     "128": "icon/edit-128.png"
   },
